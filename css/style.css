@@ -1,16 +1,16 @@
 :root {
   /* Colours */
-  --color-background: #400202;
-  --color-surface: #630505;
-  --color-text: #ffffff;
-  --color-muted: #e0b8b8;
-  --color-primary: #f5b841;
-  --color-primary-hover: #ffd166;
-  --color-on-primary: #400202;
-  --color-border: #8f2a2a;
+  --color-background: #FFF0F5;
+  --color-surface: #FAD02C;
+  --color-text: #000000;
+  --color-muted: #8E7C7A;
+  --color-primary: #000000;
+  --color-primary-hover: #000000;
+  --color-on-primary: #4A1521;
+  --color-border: #000000;
 
   /* Type scale */
-  --font-family: Arial, sans-serif;
+  --font-family: Times New Roman;
   --font-size-sm: 0.875rem;
   --font-size-base: 1rem;
   --font-size-lg: 1.25rem;
