@@ -123,7 +123,7 @@ form {
   gap: var(--space-2);
 }
 
-/* NEW: card grid (CSS Grid, rows and columns) */
+/* Card grid (CSS Grid, rows and columns) */
 .card-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -165,4 +165,36 @@ form {
 .btn:focus {
   outline: 3px solid var(--color-text);
   outline-offset: 2px;
+}
+
+/* NEW: media queries (mobile-first, set where the content breaks) */
+
+/* 1. Nav: the name and links have room to share one row */
+@media (min-width: 36em) {
+  nav h2 {
+    flex-basis: auto;
+    margin-right: auto;
+  }
+}
+
+/* 2. Cards: two cards fit side by side */
+@media (min-width: 48em) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 3. Wide screens: stop lines of text getting too long and centre the content */
+@media (min-width: 64em) {
+  header,
+  nav {
+    padding-inline: var(--space-5);
+  }
+
+  .card-grid,
+  body > section {
+    width: 100%;
+    max-width: 60rem;
+    margin-inline: auto;
+  }
 }
